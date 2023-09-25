@@ -14,7 +14,7 @@ Intialize a global dict of image
 def load_images():
     pieces=['wp','wR','wN','wB','wK','wQ','bp','bR','bN','bB','bK','bQ']
     for piec in pieces:
-        images[piec]=py.transform.scale(py.image.load(r'C:/Users/SACH/OneDrive/Desktop/Projects/chess_engine/images/'+piec+'.png'),(sq_size,sq_size))
+        images[piec]=py.transform.scale(py.image.load(piec+'.png'),(sq_size,sq_size))
 
 '''
 [<engine.Move object at 0x0000021AB94E3D90>, <engine.Move object at 0x0000021AB9FB0610>, <engine.Move object at 0x0000021AB9FB0640>, <engine.Move object at 0x0000021AB9FB06D0>, <engine.
